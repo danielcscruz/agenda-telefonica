@@ -62,7 +62,7 @@ form.addEventListener('submit', function(e){
     if (validarNumero() == true){
         adicionaLinha();
         atualizaTabela();
-        addInfo();
+        
     }else{
         alert('Número inválido');
     }
@@ -86,10 +86,13 @@ function adicionaLinha(){
         linha += `</tr>`;
 
         linhas += linha;
+
+        inputNome.value = '';
+        inputTelefone.value = '';
+        addInfo();
     }
 
-    inputNome.value = '';
-    inputTelefone.value = '';
+
 }
 
 function atualizaTabela(){

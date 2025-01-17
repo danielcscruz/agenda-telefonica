@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Contatos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/phone.png" alt="telefone">
+            <h2>Meus Contatos</h2>
+        </header>
+        <div class="card">
+            <form id="form">
+                <h3> Adicionar Novo Contato</h3>
+                <input class="nome" type="text" id="nome" name="nome" placeholder="Nome do Contato">
+                <div class="radio"><input type="radio" id="brasil" name="pais" value="br" checked /><label class="lista" for="brasil">🇧🇷 - Brasil</label></div>
+                <div class="radio"><input type="radio" id="canada" name="pais" value="ca" /><label class="lista" for="canada">🇨🇦 - Canada</label></div>
+                <div class="codigo"><h3 id="ddi">+55</h3><input class="numero" id="telefone" type="text" name="telefone" max="14" placeholder="(DDD)1234-56789"></div>
+                <h6 id="info">Somente Números</h6>
+                <button type="submit" class="button-3">Adicionar</button>
+            </form>
+        </div>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Danilo</td>
+                        <td>+55(71)99107-9602</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    </div>
+    <script src="./main.js"></script>
+
+</body>
+</html>
